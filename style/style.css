@@ -195,8 +195,16 @@
 .studio_p-link{
     color: var(--praymory-text-color);
 }
+.studio_p-link:hover,
+.studio_p-link:focus{
+    color: var(--accent-color);
+}
 .portfolio_p-link{
     color: var(--accent-color);
+}
+.portfolio_p-link:hover,
+.portfolio_p-link:focus{
+    color: var(--praymory-text-color);
 }
 .project-title{
     position: absolute;
@@ -232,6 +240,11 @@
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
     background:var(--accent-color);
+}
+.project-btn-first:hover,
+.project-btn-first:focus{
+    background-color: var(--secondary-text-color);
+    color: var(--praymory-text-color);
 }
 
 .project-title-img{
