@@ -48,18 +48,19 @@
 .portfolio-link:focus,
 .contacts-link:hover,
 .contacts-link:focus {
-    color:#000000
+    color:var(--accent-color)
 }
-.mailto-link{
-    color: var(--accent-color);
+.mailto-link,
+.contact-link {
+    color: var(--text-color);
 }
 .mailto-link:hover,
-.mailto-link:focus{
-    color: var(--text-color);
+.mailto-link:focus,
+.contact-link:hover,
+.contact-link:focus{
+    color: var(--accent-color);
 }
-.contact-link{
-    color: var(--text-color);
-}
+
 
 /* Герой */
 
@@ -76,18 +77,20 @@
     text-align: center;
 }
 .hero-btn {
+    border: none;
+    outline: none;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.9;
     letter-spacing: 0.06em;
-    align-items: center;
     text-align: center;
+    text-decoration: none;
     color: var(--secondary-text-color);
-    background:#188ce8
+    background-color: #2196F3 ;
 }
-.hero-btn:hover
-.hero-btn:focus {
-    color: #2196F3;
+.hero-btn:hover,
+.hero-btn:focus{
+    background: #188ce8;
 }
 
 /*  Особливості */
@@ -207,22 +210,30 @@
     clip-path: inset(50%);
     margin: -1px;
 }
-.btn{
+.project-btn{
     font-size: 16px;
     font-weight: 500;
     line-height: 1.6;
     letter-spacing: 0.03em;
-    color: var(--praymory-text-color)
+    text-align: center;
+    text-decoration: none;
+    background-color: #FFFFFF;
+    
 }
-.btn:hover,
-.btn:focus{
-    background-color:#f5f4fa ;
-    color: #000000;
+.project-btn:hover,
+.project-btn:focus{
+    background-color: #2196F3;
+    color: var(--secondary-text-color);
 }
 .project-btn-first{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
     color: var(--secondary-text-color);
-    background: var(--accent-color);
+    background:var(--accent-color);
 }
+
 .project-title-img{
     font-size: 18px;
     font-weight: 700;
